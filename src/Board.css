@@ -69,14 +69,26 @@ li{
     padding: 15px;
     margin-left: 15px;
 }
-
+.taskContainer2{
+    /* display: none; */
+    background: #40474D;
+    width: 200px;
+    padding: 15px;
+    margin-left: 40px;
+    margin-top:0;
+}
 #btnSave{
     margin: 10px auto;
     width: 60px;
     height: 30px;
     padding: 5px;
 }
-
+#btnAdd{
+    margin: 10px auto;
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+}
 .addTareasDiv{
     background: #DDDDDD;
     width: 200px;

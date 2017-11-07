@@ -29,16 +29,10 @@ const Body = ({ addTask }) => {
 }
 const TaskAdd = ({ task, title }) => {
     return (
-        <div className="taskContainer">
+        <div className="taskContainer2">
             <input placeholder="Add a new list ..." value={title} />
-
-            <Col md={6}>
                 <button id="btnSave">Save</button>
-            </Col>
-            <Col md={6}>
-                <p className="text--center">or<a>Cancel</a></p>
-            </Col>
-
+                {/* <p className="text--center">or<a>Cancel</a></p> */}
             {/* <textarea value={task}></textarea> */}
         </div>
     );
@@ -49,6 +43,7 @@ const Task = ({ task, title }) => {
             <div className="taskContainer">
                 <h4>{title}</h4>
                 <textarea value={task}></textarea>
+                <button id="btnAdd">Add Task</button>
             </div>
         </li>
 
@@ -78,6 +73,9 @@ const Board = ({ cards }) => {
                 <Col md={2}>
                     <div id="cajitas" className="d-inlineblock">
                         <button id="btnAddList" onClick={(e) => { addTask(e) }}>Add List ...</button>
+                    </div>
+                    <div className="divTask d-inlineblock">
+                        <TaskAdd />
                     </div>
                 </Col>
 
