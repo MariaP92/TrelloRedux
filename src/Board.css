@@ -47,14 +47,23 @@
     font-size: 15px;
     font-weight: border;
     text-align: left;
+    margin-left: 40px;
 }
 .contenedor button:hover { 
     background-color: #EE78A5;
 
-
 }
+
+li{
+    list-style: none;
+}
+
+.divTask{
+    margin-top: 15px;
+}
+
 .taskContainer{
-    display: none;
+    /* display: none; */
     background: #40474D;
     width: 200px;
     padding: 15px;

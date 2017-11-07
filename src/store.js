@@ -2,8 +2,8 @@ import createStore from 'redux-zero'
 let Cards = [
     {
         id:0,
-        title: '',
-        tarea:'',
+        title: 'To Do',
+        tarea:'Tarea 1',
         addTask: false
     }
 ]
