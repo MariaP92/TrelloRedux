@@ -4,6 +4,7 @@ import Logo from './img/logo.png'
 import { connect } from "redux-zero/react";
 import { Grid, Row, Col, Thumbnail, Button } from 'react-bootstrap';
 import { HashRouter, Switch, Route, NavLink, Redirect } from 'react-router-dom';
+import { addTask, inputPass, inputPassConfirm, comparePassword } from "./actions";
 
 const Header = () => {
     return (
@@ -32,16 +33,14 @@ const Task = () => {
     return (
         <div className="taskContainer">
             <input placeholder="Add a new list ..." />
-            <Grid>
-                <Row>
-                    <Col md={6}>
-                        <button id="btnSave">Save</button><p className="text--center">or<a>Cancel</a></p>
-                    </Col>
-                    <Col md={6}>
-                        <p className="text--center">or<a>Cancel</a></p>
-                    </Col> 
-               </Row>
-            </Grid>
+
+            <Col md={6}>
+                <button id="btnSave">Save</button>
+            </Col>
+            <Col md={6}>
+                <p className="text--center">or<a>Cancel</a></p>
+            </Col>
+
             <textarea></textarea>
         </div>
     );

@@ -54,14 +54,16 @@
 
 }
 .taskContainer{
+    display: none;
     background: #40474D;
     width: 200px;
     padding: 15px;
+    margin-left: 15px;
 }
 
 #btnSave{
     margin: 10px auto;
-    width: 70px;
+    width: 60px;
     height: 30px;
     padding: 5px;
 }
@@ -77,39 +79,3 @@
     margin: 10px;
 }
 
-.addTareasDiv button{
-    color: white;
-    background: #208337;
-    padding: 0px;
-    border: 2px transparent;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: border;
-    text-align: left;
-    margin: 8px;
-    width: 50px;
-    height: 20px;
-    text-align: center;
-}
-
-.addTareasDiv h1{
-    font-size: 16px;
-    margin: 0 auto;
-    padding: 0px;
-}
-
-.addTareasDiv .botones{
-    color: white;
-    background: #208337;
-    padding: 5px;
-    border: 2px transparent;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: border;
-    text-align: left;
-    margin: 5px;
-    width: 150px;
-    height: 20px;
-    text-align: center;
-}
- 

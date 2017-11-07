@@ -8,8 +8,18 @@ let Cards = [
     }
 ]
 
+let User =[
+    {
+        id:0,
+        userName:'',
+        userLastName:'',
+        password:'',
+        email:''
+    }
+]
 const initialState = {
     cards: Cards,
+    users: User,
     selectedItem : -1, 
 }
 
