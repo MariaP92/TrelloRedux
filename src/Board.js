@@ -28,33 +28,47 @@ const Body = ({ addTask }) => {
     );
 }
 const TaskAdd = ({ task, title }) => {
+    const onSubmit = (e) => {
+        e.preventDefault();
+        addTask(this.nameInputRef.value);
+    }
     return (
         <div className="taskContainer2">
-            <input placeholder="Add a new list ..." value={title} />
-                <button id="btnSave">Save</button>
+            <form onSubmit={onSubmit}>
+                <input placeholder="Add a new list ..." value={title} ref={(e) => this.nameInputRef = e} />
+                <button className="btn btn-circle text-uppercase" id="btnSave">Save</button>
                 {/* <p className="text--center">or<a>Cancel</a></p> */}
-            {/* <textarea value={task}></textarea> */}
+                {/* <textarea value={task}></textarea> */}
+            </form>
         </div>
     );
 }
 const Task = ({ task, title }) => {
+    const onSubmit = (e) => {
+        e.preventDefault();
+        addTask(this.nameInputRef.value);
+    }
     return (
         <li>
-            <div className="taskContainer">
-                <h4>{title}</h4>
-                <textarea value={task}></textarea>
-                <button id="btnAdd">Add Task</button>
-            </div>
+            <form onSubmit={onSubmit}>
+                <div className="taskContainer">
+                    <h4>{title}</h4>
+                    <textarea value={task} ref={(e) => this.nameInputRef = e}></textarea>
+                    <button id="btnAdd">Add Task</button>
+                </div>
+            </form>
         </li>
 
     );
 }
 const Board = ({ cards }) => {
+
+
     const UserTask = cards.map((taskUser, index) => {
         return (
             <Task
                 key={index}
-                task={taskUser.tarea}
+                task={taskUser.task}
                 title={taskUser.title}
             />
         );

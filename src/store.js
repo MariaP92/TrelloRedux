@@ -3,8 +3,8 @@ let Cards = [
     {
         id:0,
         title: 'To Do',
-        tarea:'Tarea 1',
-        addTask: false
+        task:'Tarea 1',
+        add: false
     }
 ]
 

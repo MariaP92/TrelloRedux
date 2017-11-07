@@ -1,7 +1,17 @@
 import store from "./store";
 
-export const addTask = (index) =>{
-    // $('.taskContainer').show;
+export const addTask = (task) =>{
+    const addTaskList = store.getState().cards.concat(  {
+        id : store.getState().cards.length + 1  ,
+        title:'',
+        task: task,
+        add: false
+	});
+
+	store.setState({
+		cards: addTaskList
+	})
+    
 }
 export const inputPass =(e)=> {
     console.log(e.target);
